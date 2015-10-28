@@ -3,7 +3,7 @@ Reference implementation of building microservices based application around ephe
 
 The idea is to have each Microservice be made available as an Docker image. Each such Docker image is only run when it is needed. If the service is not needed, then there is NO footprint of the service in the overall infrastructure. The footprint represents the runtime Docker instance that executes a particular microservice. 
 
-*Service Ingredients*
+**Service Ingredients**
 
 We model a simple Order processing flow. Following are the microservices included in the flow :-
   1. OrderAcceptService
@@ -22,7 +22,7 @@ On successful execution of the applicatiom, the service returns the data back to
 
 The core idea is to test a solution that will trigger creation of a Container instance on each Transaction request in the Application. 
 
-*Advantages of this architecture*
+**Advantages of this architecture**
 
 1. No footprint of service if its not needed. This leads to better utilization of hardware. 
 2. Provides a better view of how certain services are needed, and better manage the Capacity for each service
